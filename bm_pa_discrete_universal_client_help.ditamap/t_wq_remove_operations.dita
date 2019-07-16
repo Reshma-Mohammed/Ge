@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_11261be1-1e70-489e-907c-5eda56878e6e"><title>Remove Operations from the Work Queue</title><prolog><author>Swathi</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>In the <wintitle>Work Queue</wintitle> page, in the row containing the operation that you want to remove, select <image href="close.png"/>.</cmd><stepresult>The operation is removed from the work queue.<note type="tip">To remove all the  operations in the work queue that you have manually added, in the upper-right corner of the page, select <image href="mes-clear-all.png"/>.</note></stepresult></step></steps></taskbody></task>

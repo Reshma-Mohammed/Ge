@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [
+]>
+<map id="IYWYxNDFhZTEtM2Y2Mi00MWZlLWE1ZTItNjMxNmI2ZTA0NWY5"><title>Preinstallation Requirements</title><topichead chunk="to-content" id="IZDY5OTQ3NTQtOTFmOS00MjlmLThmMDQtMjZhY2EwNTVlMzBl" type="article"><topicmeta><navtitle>Preinstallation Requirements</navtitle></topicmeta><topicref href="c_pa_gsg_doc_preparing_to_install_pa.dita"></topicref><topicref href="c_pa_gsg_doc_hardware_requirements.dita"></topicref><topicref href="c_pa_gsg_doc_software_requirements.dita"></topicref><topicref href="c_pa_gsg_doc_SSL_certificates.dita"></topicref><topicref href="t_pa_gsg_doc_configure_UAAC_scripts.dita"></topicref><topicref href="t_pa_gsg_configure_couchdb_settings.dita"></topicref><topicref href="t_pa_gsg_doc_install_docker.dita"></topicref></topichead></map>

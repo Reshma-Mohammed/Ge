@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_9d337c46-4216-41ce-8ac3-33444e2a564c"><title>Delete a Route</title><prolog><author>Swathi</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>In the <wintitle>Route Management</wintitle> page, select the route that you want to delete.</cmd><stepresult>The <wintitle>Edit Route</wintitle> page appears.</stepresult></step><step><cmd>Select <image href="menu.png"/>, and then select <uicontrol>Delete</uicontrol>.</cmd><stepresult>A message appears, asking you to confirm that you want to delete the route.</stepresult></step><step><cmd>Select <uicontrol>Delete</uicontrol>.</cmd></step></steps><result>The route and the operations linked to it are deleted.</result></taskbody></task>

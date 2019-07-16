@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_6eec94ce-a6fd-45bc-a41f-780c3f97ef96"><title>About Bill of Material (BOM)</title><prolog><author>Swathi</author></prolog><conbody><p>A Bill of Material (BOM) contains BOM formulations that define a list of items and the quantity of each BOM item needed to produce a product. BOM items are defined and associated with BOM formulations in Plant Applications.</p><p>Using Route Management, you can perform the following tasks:<ul><li>Link a BOM formulation to a route.</li><li>Link BOM items to operations in the route.</li></ul>
+        </p><p>After the route is released and used in a work order, you can provide details on the actual quantity of BOM items that are consumed, using the Work Queue module. This allows you to keep a track of the quantity of material that is consumed.</p></conbody></concept>

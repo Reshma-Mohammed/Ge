@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_7196c8c9-461b-49c2-9053-e5d823ee6b81"><title>About Revising a Route</title><prolog><author>Swathi</author></prolog><conbody><p>After you release or archive a route, you cannot modify it. However, if you want to update the route (for example, remove an operation or change the BOM formulation), you can revise it. The following conditions apply when you revise a route:
+            <ul><li>You can revise a route that is in the released or archived state. </li><li>You cannot revise a route in the draft state.</li><li>You can revise only the latest version of a route.</li></ul>
+            	
+        </p></conbody></concept>

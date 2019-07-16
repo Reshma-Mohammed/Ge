@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_7a1e1290-5f67-454f-ae04-c7d0f4a45f41"><title>About Clocking off an Operation</title><conbody><p>As an operator, you can clock off an operation if you want to stop working on a serial number intermittently. The timer in the page displaying operation details stops tracking the time when you clock off an operation and starts tracking back only when you clock on the operation again. Thus, the time taken to complete the operation excludes the clocked off time, resulting in a more accurate calculation.<note>When you complete an operation, the operation is clocked off automatically.</note></p></conbody></concept>

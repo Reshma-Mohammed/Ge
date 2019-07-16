@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_f0a86efe-a188-4abe-a09a-fd6efd805d91"><title>Release an Activity</title><prolog><author>Sweta Bhagat</author></prolog><taskbody><context>
+            <p>You can view the <uicontrol>Release</uicontrol> option for an activity only when the activity is yet to be completed. After you release an activity, you can perform or skip that activity. </p>
+        </context><steps id="steps_yvq_p11_xw"><step><cmd>Log in to the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/univ_client"></ph>. </cmd></step><step><cmd>Select <image href="app_icon_activities.png"/>. </cmd></step><step><cmd>Select the <uicontrol>Open</uicontrol> tab.</cmd></step><step><cmd>For the activity you want to perform but it is yet to be completed, select <uicontrol>Release</uicontrol>.</cmd></step></steps><result>The activity is released and you can now perform or skip the released activity.</result></taskbody></task>

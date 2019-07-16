@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_30f51e68-9ac2-4709-9e53-e23e6ab403b0"><title>Archive a Route</title><prolog><author>Swathi</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>In the <wintitle>Route Management</wintitle> page, select <uicontrol>Released</uicontrol>, and then select the route that you want to archive.</cmd><stepresult>The <wintitle>View Route</wintitle> page appears.</stepresult></step><step><cmd>Select <image href="menu.png"/>, and then select <uicontrol>Archive</uicontrol>.</cmd><stepresult>A message appears, specifying that the action cannot be reversed, and asking you to confirm that you want to archive the route.</stepresult></step><step><cmd>Select <uicontrol>Archive</uicontrol>.</cmd></step></steps><result>The route is archived.</result></taskbody></task>

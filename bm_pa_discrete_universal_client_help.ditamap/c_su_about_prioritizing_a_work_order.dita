@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_d26bdd62-73f0-4097-9eb3-bf1a602e6c05"><title>About Prioritizing a Work Order</title><shortdesc/><conbody><p>Priority is the order in which the work order is executed. When you assign a priority to a work order, the work order with the highest priority is executed first on a Production Line where, 1 denotes the highest priority and 0 denotes the lowest priority.<ul><li>You can prioritize a work order in the Ready status on the Production Line.</li><li>You cannot prioritize a work order in the In Progress or Completed status.</li></ul></p></conbody></concept>

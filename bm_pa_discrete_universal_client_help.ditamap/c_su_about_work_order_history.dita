@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_cba3f2ef-3cd0-45da-b4c0-6f7f1185b231"><title>About Work Order History</title><conbody><p>As a supervisor, you can access the events associated with a work order in the <wintitle>History</wintitle> page of the Order Management application. An event is created each time that a work order is created, a lot is put on hold, or a serial number is clocked on. </p></conbody></concept>

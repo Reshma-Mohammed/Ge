@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_d7b63336-2dfb-494c-a748-7ec35a336985"><title>About Routes</title><prolog><author>Swathi</author></prolog><conbody><p>A route defines the process and operations to manufacture a product. It also specifies the order in which you must perform these operations.</p><p>A route contains the following components: <ul><li>Operations: The main work segment in a route. An operation is a sequence of tasks that you must perform to manufacture the product.</li><li>BOM: A list of materials used in an operation, along with the quantity that is required for each item. BOM formulations and BOM items are defined in Plant Applications. Each operation is linked to a BOM item.</li><li>Documents: A document is a reference material used to perform an operation (for example, standard operating procedure, circuit diagram).</li></ul>
+        </p><example>
+            <title>Routes in a Motor Manufacturing Unit</title>
+            <p>Suppose you want to create routes for a motor manufacturing unit. This involves manufacturing the following components and assembling them: <ul><li>Shell</li><li>Stator</li><li>Rotor</li><li>Endshields</li></ul>
+            </p>
+            <p>In this case, you will create the following routes: <ul><li>Shell: Includes welding sheets of metal into cylindrical shape. In addition, the route includes reference documents, which contains latest diagrams of the steel rods and information on how to weld them. </li><li>Stator: Includes assembling windings with the shells, and turning them to accommodate endshields. </li><li>Rotor: Includes injecting the shaft, and verifying the load balance of the rotor.</li><li>Endshields: Includes turning and drilling the endshields so that they can be fixed to the stator.</li><li>Assembly: Includes assembling the stator, rotor, and enshields to produce the final product. This route can also include painting, testing, and packaging the product.</li></ul>
+            </p>
+        </example></conbody></concept>

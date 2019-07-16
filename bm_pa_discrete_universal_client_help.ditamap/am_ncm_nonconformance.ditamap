@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [
+]>
+<!--Don't forget to manually add an ID attribute value to the parent element for the map. 
+Use the unique ID generator tool available here to generate a map ID: http://10.202.93.79/exist/restxq/unique--><map id="IYmQxYTI3OGMtMWIyNS00ZmI2LWFhMGUtYzU3MzU4ODE3N2I3"><title>NCR Management</title><topichead chunk="to-content" id="IYjI0NGQyYjAtMTI3ZC00YTRhLWJiM2ItODgzOTY0NTA2NzI5" type="article"><topicmeta><navtitle>NCR Management</navtitle></topicmeta><topicref href="c_ncm_about_ncm.dita"></topicref><topicref href="t_ncm_access_defects.dita"></topicref><topicref href="t_ncm_dispose_a_defect.dita"></topicref><topicref href="t_ncm_dispose_multiple_defects.dita"><topicref href="t_ncm_create_a_plan.dita"></topicref></topicref><topicref href="t_ncm_edit_continue_to_process_dispostion_method.dita"></topicref><topicref href="t_ncm_filter_a_defect.dita"></topicref></topichead></map>

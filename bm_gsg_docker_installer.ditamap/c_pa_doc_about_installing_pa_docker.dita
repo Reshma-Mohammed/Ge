@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_79b70373-aeb7-43ac-b26c-8f193f0b2eb6"><title>About Installing Plant Applications Universal Client Docker</title><conbody><p>To access Plant Application Universal Client 8.0 for discrete, you must install Plant Application Docker 8.0 on your computer. </p><p>You can download the installation package from the <xref scope="external" format="html" href="https://artifactory.predix.io/artifactory/webapp/#/home">Artifactory</xref>. This topic explains you how to:<ul><li><xref href="t_pa_gsg_doc_install_universal_client_docker_on_windows.dita">Install the Plant Application Universal Client Docker on the Windows system.</xref></li><li><xref href="t_pa_gsg_doc_install_universal_client_on_linux.dita">Install the Plant Application Universal Client Docker on the Linux system.</xref></li></ul></p></conbody></concept>

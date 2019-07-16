@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_2db44895-17a8-4fcd-96f4-d52ccf80047f"><title>About Clocking Off a Serial Number</title><prolog><author>Swathi</author></prolog><conbody><p>If you want to stop working on a serial number for some time, you can clock off the serial number, and then clock on again when you resume working on it. It provides visibility to the supervisor on the progress of work for an operation.</p><p>The following conditions apply when you clock off a serial number:<ul><li>You can clock off only the serial numbers that you have clocked on.</li><li>You can clock off multiple serial numbers in an operation at the same time.</li></ul></p></conbody></concept>

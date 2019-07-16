@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_kgx_2wn_xhb"><title>Edit CTP Disposition Method</title><taskbody><context id="context_pgx_2wn_xhb">
+            <p>As a Quality engineer, once you select Continue to process disposition method, you can edit any or all of the following details of the Disposition: <ul><li> The operation till which the lot can be processed.</li><li>The disposition method can be changed from Continue to process method to any of the other disposition methods such as, Clear, Scrap, Rework or Use as is. </li><li>The disposition action reason.</li><li>The additional information related to disposition.</li></ul></p>
+        </context><steps><step><cmd>Enter the plan number associated with the defect that is in Continue to process disposition method. </cmd><info>
+                    <note type="tip">When you dispose multiple defects, the plan number is added or selected by you when you create a plan. When you dispose a single defect, the plan number is generated when you submit the disposition method. The plan number is displayed in the PLAN column of the grid on the Home page. </note>
+                </info></step><step><cmd>Click <image href="dispose_ncm.png"/>.  </cmd><info>
+                    <note>When CTP disposition method is selected for a Plan, all the defects in the Plan are moved to Active state. You can click , to edit CTP disposition method. For more information, refer to Edit CTP Disposition Method section. <p/>If at least one of the Serial No/Lot completes the CTP operation (the defect moves to Submitted state), you are not allowed to the edit CTP disposition method.<p/> The disposition button is disabled. Only when all the Serial Nos / Lots complete the CTP operation (the all defected are moved to Submitted state), the disposition button is re-enabled to dispose the Plan. </note>
+                </info><stepresult>The <ph><wintitle>Disposition</wintitle></ph> page appears.</stepresult></step><step><cmd>Edit the Disposition details.</cmd><info>To change the operation till which the lot can be continued to process:</info><substeps><substep><cmd>Edit the operation in the <uicontrol>Select operation</uicontrol> drop-down list box. </cmd></substep><substep><cmd>Select <uicontrol>Select Disposition Action Reason</uicontrol>, to modify the disposition action reason.</cmd><stepresult>The <wintitle>Select reasons</wintitle> window appears. </stepresult></substep><substep><cmd>Modify the reasons in the <ph>Select reasons </ph>window. </cmd></substep><substep><cmd>In the <uicontrol>ADDITIONAL INFORMATION</uicontrol> box, edit any relevant information such as a URL, contact details of the supplier, or any information that is helpful to perform the root cause analysis of the non-conformance. </cmd></substep><substep><cmd>Select <uicontrol>Submit</uicontrol>.</cmd></substep></substeps><info>To modify the disposition method of the defect:</info><substeps><substep><cmd>Select any of the following options in the <uicontrol>Select Disposition</uicontrol> drop-down list box:</cmd><info>
+                            <table colsep="1" rowsep="1" frame="all"><tgroup cols="2"><colspec colname="newCol1" colwidth="1*" colnum="1"/><colspec colname="newCol2" colwidth="1*" colnum="2"/><thead><row><entry>Option</entry><entry>Description</entry></row></thead><tbody><row><entry>
+                                                <p><uicontrol>Clear</uicontrol></p>
+                                            </entry><entry>
+                                                <p>Select <uicontrol>Clear</uicontrol> if the defect is considered as Not a Defect. </p>
+                                            </entry></row><row><entry>
+                                                <p><uicontrol>Use as is </uicontrol></p>
+                                            </entry><entry>
+                                                <p>Select <uicontrol>Use as is</uicontrol> to use the non-conforming part in the operations as it is. </p>
+                                            </entry></row><row><entry>
+                                                <p><uicontrol>Scrap</uicontrol></p>
+                                            </entry><entry>
+                                                <p>Select <uicontrol>Scrap</uicontrol> to discard the defective lot. </p>
+                                            </entry></row><row><entry>
+                                                <p><uicontrol>Rework</uicontrol>
+                                                </p>
+                                            </entry><entry>
+                                                <p>Select<uicontrol> Rework</uicontrol> to rework on the non-conforming part and then select the operation on which the part should be reworked in the <uicontrol>Select operation</uicontrol> drop-down list box. </p>
+                                            </entry></row></tbody></tgroup></table>
+                        </info></substep><substep><cmd>Select <uicontrol>Select Dispostion Action Reason</uicontrol>, to modify the disposition action reason.</cmd><stepresult>The <wintitle>Select reasons</wintitle> window appears. </stepresult></substep><substep><cmd>Modify the reasons in the <ph><wintitle>Select reasons</wintitle>
+                            </ph>window. </cmd></substep><substep><cmd>In the <uicontrol>ADDITIONAL INFORMATION</uicontrol> box, edit any relevant information such as a URL, contact details of the supplier, or any information that is helpful to perform the root cause analysis of the non-conformance. </cmd></substep><substep><cmd>Select <uicontrol>Submit</uicontrol>.</cmd></substep></substeps><info>To modify the dispostion action reason:</info><substeps><substep><cmd>Select <uicontrol>Select Dispostion Action Reason</uicontrol>, to modify the disposition action reason.</cmd><stepresult>The <wintitle>Select reasons</wintitle> window appears. </stepresult></substep><substep><cmd>Modify the reasons in the<wintitle> </wintitle><ph><wintitle>Select reasons</wintitle>
+                            </ph>window. </cmd></substep><substep><cmd>Select <uicontrol>Submit</uicontrol>.</cmd></substep></substeps><info>To modify the additional information related to disposition.</info><substeps><substep><cmd>In the <uicontrol>ADDITIONAL INFORMATION</uicontrol> box, edit any relevant information such as a URL, contact details of the supplier, or any information that is helpful to perform the root cause analysis of the non-conformance. </cmd></substep><substep><cmd>Select <uicontrol>Submit</uicontrol>.</cmd></substep></substeps></step></steps><result>
+            <simpletable relcolwidth="1.02* 1.0*" frame="all"><sthead><stentry>Scenario</stentry><stentry>
+                        <p>Result</p>
+                    </stentry></sthead><strow><stentry>
+                        <p>When the operation for Continue to process method is changed </p>
+                    </stentry><stentry>
+                        <p>
+                            <ul><li>The hold is released on the previously selected operation and a hold is created on the operation selected in step 3. </li></ul>
+                        </p>
+                    </stentry></strow><strow><stentry>Disposition method changed to Clear </stentry><stentry>
+                        <ul><li>The hold is released on the operation selected previously for CTP disposition. </li><li>The defect status is changed to Not a Defect. </li><li>Disposition status is changed to Completed. </li></ul>
+                    </stentry></strow><strow><stentry>
+                        <p>Disposition method changed to Rework </p>
+                    </stentry><stentry>
+                        <p>
+                            <ul><li>The hold is released on the operation selected previously for CTP disposition. Hold is created on the operation at which the lot is currently on. The lot goes to the rework operation. </li><li>The defect status is Active. It is changed to Submitted after rework operation is completed.</li><li>Disposition is Active till rework is completed. It is changed to Completed after rework operation is completed.</li></ul>
+                        </p>
+                    </stentry></strow><strow><stentry>
+                        <p>Disposition method changed to Use as is </p>
+                    </stentry><stentry>
+                        <ul><li>The hold on the operation selected previously for CTP disposition is released.</li><li>The defect status is changed to Closed. </li><li>The disposition status is changed to Completed. </li></ul>
+                    </stentry></strow><strow><stentry>
+                        <p>Disposition method changed to Scrap </p>
+                    </stentry><stentry>
+                        <ul><li>
+                                <p>The lot is scrapped. </p>
+                            </li><li>
+                                <p>The defect status is changed to Closed. </p>
+                            </li><li>
+                                <p>The disposition status is changed to Completed. </p>
+                            </li></ul>
+                    </stentry></strow></simpletable>
+        </result></taskbody></task>

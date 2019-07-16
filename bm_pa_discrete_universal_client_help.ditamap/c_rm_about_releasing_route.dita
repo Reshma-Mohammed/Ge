@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_eff1b30b-9538-454e-9d17-7a7c129f338a"><title>About Releasing a Route</title><prolog><author>Swathi</author></prolog><conbody><p>A route must be released for it to be available in a work order or a process order. The following conditions apply when you release a route: <ul><li>You can release a route only if it is in the draft state.</li><li>You cannot release a route that is archived.</li><li>You cannot modify a route that is released. However, you can revise or copy the route after it is released.</li><li>After you release a route, you cannot reverse the action.</li></ul>
+                </p></conbody></concept>

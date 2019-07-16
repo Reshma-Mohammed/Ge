@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_633f1e11-629d-4570-9ac8-693c0b02796e"><title>About Adding a Group to the Privilege Set</title><conbody><p>As an Administrator, you can add a group to the privilege set to manage privilege access for multiple users conveniently and easily. When a group is added to a privilege set, all the users associated with the group can access the application associated with the privilege set.</p></conbody></concept>

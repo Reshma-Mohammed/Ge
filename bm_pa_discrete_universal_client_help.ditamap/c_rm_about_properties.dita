@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_e67d296a-10de-4323-8899-3a608243f8ac"><title>About Properties</title><prolog><author>Swathi</author></prolog><conbody><p>A property is an additional attribute that is assigned to a route or an operation to produce a product. Properties are defined and grouped under property groups in Plant Applications Administrator. </p><p>Using Route Management, you can assign a property group to a route, and provide values for custom properties that are specific to the route. For example, if the route is for assembling a motor, you can provide the material grade, ERP project number, and other details specific to the route.</p><p>You can assign a property group to a route or an operation.</p></conbody></concept>

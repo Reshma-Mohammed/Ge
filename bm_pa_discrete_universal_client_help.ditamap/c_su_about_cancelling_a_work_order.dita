@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_f849d6d1-e564-41d7-94be-5ceccaeecbd7"><title>About Cancelling a Work Order</title><shortdesc/><conbody><p>You can cancel a work order when you no longer need it. When you cancel a work order, the work order is removed from the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/supervisor_app"></ph> and <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/operations_app"></ph> applications. The following conditions apply when you remove operations from the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/supervisor_app"></ph> application.<ul id="ul_c5f939dc-5891-4bd0-bd13-f6d47b972bbf"><li>You can cancel a work order only in the Ready status.</li><li>You cannot cancel a work order in the In Progress or Completed status.</li></ul></p></conbody></concept>

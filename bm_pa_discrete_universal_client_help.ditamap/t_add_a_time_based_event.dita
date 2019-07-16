@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_adeec0b9-650f-4c5b-8621-3ee4ca7e4c31"><title>Add a Time-Based Event</title><prolog><author>Sweta Bhagat</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>Log in to the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/univ_client"></ph>. </cmd></step><step><cmd>Select <image href="app_icon_activities.png"/>.</cmd><stepresult>
+                    <p>By default, the <wintitle>Open</wintitle> page appears.</p>
+                </stepresult></step><step><cmd>In the <wintitle>Open</wintitle> page, select <image href="header_add_icon_downtime.png"/>, and then select <uicontrol>Time Based Event</uicontrol>.</cmd><stepresult>
+                    <p>The <wintitle>Add Time Based Event</wintitle> window appears, displaying a list of time-based Autolog sheets accessible to the logged-in user as configured in Plant Applications Administrator. </p>
+                </stepresult></step><step><cmd>In the <b>1. Choose activity</b> section, select an activity to create a time-based event on the selected activity.</cmd></step><step><cmd>In the <uicontrol>2. Add Event Details</uicontrol>section, in the <uicontrol>TIMESTAMP</uicontrol> box, select a date and time.</cmd><info>
+                    <note>The time stamp of the event must be within two hours from the current date and time.</note>
+                </info></step><step importance="optional"><cmd>In the <uicontrol>COMMENT</uicontrol> box, enter a comment for the event.</cmd></step><step><cmd>Select <uicontrol>Save</uicontrol>.</cmd></step></steps><result>The time-based event for the selected activity is added and an activity is automatically created for the event. The activity appears in the <wintitle>Open</wintitle> page.</result></taskbody></task>

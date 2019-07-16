@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_245a59b6-8587-4a14-863b-0dcff4af8f0b"><title>About Removing Operations from the Work Queue</title><prolog><author>Swathi</author></prolog><conbody><p>If you no longer want to work on operations in the work queue, you can remove them from the work queue. </p><p>You can only remove the operations that you have added manually to the work queue. If you attempt to remove an operation that has been assigned to you or clocked on by you, the operation appears again when you refresh the page.</p></conbody></concept>

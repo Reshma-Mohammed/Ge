@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_prs_2k1_xhb"><title>Create a Plan</title><taskbody><steps id="steps_trs_2k1_xhb"><step><cmd>Enter an NC number in the search bar. All the defects associated with the NC number appear on the Home Page. </cmd><info>
+                    <note> In NC view, a check-box are enabled against each defect. </note>
+                </info></step><step><cmd>Select the defects for which want to create a plan.</cmd></step><step><cmd>Select <image href="addDispPlan_ncm.png" id="image_urs_2k1_xhb"/>. <ph>Create a Plan or add to an existing Plan</ph> window appears. </cmd></step><step><cmd>Select <uicontrol>Add to a New Plan</uicontrol> button to add the defect to a new plan. </cmd></step><step><cmd>Select any of the listed plans in the window to add the defect to an existing plan. </cmd><info>
+                    <note type="tip">You can search for an existing plan using the Search box.</note>
+                </info></step><step><cmd>Select <uicontrol>Apply</uicontrol>. </cmd></step><step><cmd><b>Optional</b>: Repeat step 1 to step 6 with other NC numbers, to add defects from multiple NC numbers to a single plan.</cmd></step></steps></taskbody></task>

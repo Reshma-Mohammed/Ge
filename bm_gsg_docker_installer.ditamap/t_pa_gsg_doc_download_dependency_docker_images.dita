@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_35041546-2c8a-4e32-ab8f-76b5079f06bf"><title>Download Dependent Docker Images </title><prolog><author>Reshma Mohammed</author></prolog><taskbody><prereq>
+            <ul><li>You need internet access to download these images. </li><li>Wait for a few minutes to complete the download. </li></ul>
+        </prereq><context>You must download the dependent Docker images necessary for messaging and HAProxy.</context><steps id="steps_dba86bf4-a0ae-4a76-9b36-3da5e6c8008f"><step><cmd>Open Windows PowerShell and run the following commands: </cmd><stepresult>
+                    <ul><li>
+                            <codeblock>docker pull confluentinc/cp-kafka:5.1.2 </codeblock>
+                        </li><li>
+                            <codeblock>docker pull confluentinc/cp-zookeeper:5.1.2</codeblock>
+                        </li><li>
+                            <codeblock>docker pull confluentinc/cp-schema-registry:5.1.2</codeblock>
+                        </li><li>
+                            <codeblock>docker pull thomsch98/kafdrop </codeblock>
+                        </li><li>
+                            <codeblock>docker pull haproxy:1.8</codeblock>
+                        </li><li>
+                            <codeblock>docker pull eventuateio/eventuate-tram-cdc-mysql-service:0.21.2.RELEASE</codeblock>
+                        </li></ul>
+                </stepresult></step></steps><result id="result_093ffcdc-90eb-4663-b427-2f155f6906e4">The necessary dependent Docker images are downloaded.</result></taskbody></task>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_0b311610-dd07-49b7-994e-dda3b8cd70f7"><title>About Documents</title><prolog><author>Swathi</author></prolog><conbody><p>Using route management, you can add a document that contains reference material to perform an operation (for example, circuit diagram, standard operating procedure). To do so, you must first <xref href="t_rm_upload_document.dita">upload the document</xref>, and then <xref href="t_rm_attach_document.dita">attach it to the appropriate route</xref>.</p></conbody></concept>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_b2b8e8f5-1a9d-4045-85f9-5e7526b8e186"><title>Remove a group</title><prolog><author>Reshma Mohammed</author></prolog><taskbody><steps id="steps_02d80fa6-a506-48b6-8c90-c6ef0efcacfe"><step><cmd>To remove a group from the privilege set, select <image href="cancel_wo_icon_new.png"/> in the row containing the group.</cmd><stepresult>A message appears, asking you to confirm that you want to remove the group.</stepresult></step><step><cmd>Select <uicontrol>Delete</uicontrol>.</cmd></step></steps><result id="result_603ea4e8-058b-4f4f-a3c4-d4023f7fc791"> The group is removed from the privilege set. </result></taskbody></task>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_e23d9a67-8186-4078-b5dc-f72d3e066fb9"><title>Delete an Operation</title><shortdesc> You can delete an operation if it is no longer needed to produce the product using the route.</shortdesc><prolog><author>Swathi</author></prolog><taskbody><prereq>
+            <ul><li>If you have made any changes to the route, save the changes.</li></ul>
+            
+            </prereq><steps id="steps_yvq_p11_xw"><step><cmd>In the <wintitle>Route Management</wintitle> page, select the route for which you want to delete an operation.</cmd><stepresult>The <wintitle>Edit Route</wintitle> page appears.</stepresult></step><step><cmd>In the left pane, select <image href="close.png"/> in the row containing the operation that you want to delete.</cmd><stepresult>A message appears, asking you to confirm that you want to delete the operation.</stepresult></step><step><cmd>Select <uicontrol>Yes</uicontrol>, and then select <uicontrol>Save</uicontrol>.</cmd></step></steps><result>The operation is deleted.<note>The equipment linked to the operation is not deleted.</note></result></taskbody></task>

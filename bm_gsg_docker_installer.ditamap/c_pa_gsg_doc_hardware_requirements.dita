@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_f3789d44-1b2a-4550-886e-ba6908a3933a"><title>System Requirements</title><conbody><p>Ensure that your computer meets the system requirements as described in the following table. <table frame="all"><tgroup cols="2"><colspec colname="c1" colwidth="1*" colnum="1"/><colspec colname="c2" colwidth="1*" colnum="2"/><thead><row><entry>Item</entry><entry>Requirement</entry></row></thead><tbody><row><entry>RAM</entry><entry>32GB</entry></row><row><entry>Hard drive</entry><entry>500GB</entry></row><row><entry>Hard drive space allocation for Docker</entry><entry>22GB</entry></row><row><entry>CPU </entry><entry>AMD Phenom CPU</entry></row><row><entry>SQL Server</entry><entry>SQL Server 2016 (64 bit) or later</entry></row><row><entry>Framework</entry><entry>Microsoft .NET Framework 4.7</entry></row><row><entry>Operating System</entry><entry>Windows Server 2016 (64 bit)</entry></row><row><entry>Plant Applications Server</entry><entry>Plant Applications Server 2017</entry></row><row><entry>Web Browser</entry><entry>
+                                <p>Windows - Chrome v65.0 or later </p>
+                                <p>Linux - Ubuntu</p>
+                            </entry></row><row><entry>Processor</entry><entry>3 GHz clock-speed Intel Core i3, i5, or i7 CPU or equivalent</entry></row></tbody></tgroup></table></p></conbody></concept>

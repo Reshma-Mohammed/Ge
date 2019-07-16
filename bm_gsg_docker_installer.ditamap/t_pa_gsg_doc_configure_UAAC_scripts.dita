@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_c3b7cdfb-0ecc-4ddd-8e28-500d7725c407"><title>Configure UAAC Settings</title><prolog><author>Reshma Mohammed</author></prolog><taskbody><context id="context_b483ad92-829a-4226-8acd-e478415c3902">Using the UAA Command Line Interface (UAAC), an administrator can create users in the User Account and Authentication (UAA) server. You must run UAAC setup script after downloading it from Artifactory on your UAA server. This step enables the Administrator to:<ul><li>Create users.</li><li>Configure groups.</li><li>Associate the user to the groups.</li><li>Add groups as a scope to the clients.</li></ul></context><steps id="steps_cafbe47e-836e-4576-94e7-b39457eb86d0"><step><cmd>Go to <xref scope="external" format="html" href="https://artifactory.predix.io/artifactory/webapp/#/home">Artifactory</xref> and download the uaac_setup.sh file, and then open it. </cmd><stepresult>The available Groups appears in the echo <wintitle>Adding Groups</wintitle> section. <image href="doc_uaas_setup.jpg"/></stepresult></step><step><cmd>Update the following details in the uaac_setup.sh file.</cmd><info>
+                    <ul><li>Add the users or members to the groups. To do this, enter the following command for each group. </li></ul>
+                </info><info>
+                    <p><codeblock>uaac member add mes.equipment.user bm_operator_1</codeblock>, where <varname>mes.equipment.user</varname> denotes the group and <varname>bm_operator_1</varname> is the user. </p>
+                </info><info>
+                    <ul><li>If you already have your scopes defined in your UAA, upgrade the scopes to the client. To do this, add all the groups in the format, <varname>mes.&lt;application_name>.user</varname> in the following record. </li></ul>
+                </info><info>
+                    <p><codeph>uaac client update &lt;your_client_id> --scope "openid,password.write,scim.read,scim.write,predix-apphub-service,uaa.none,uaa.user,uaa.resource bm-operators bm-line-leaders bm-administrators,trend_client.read,trend_client.write,historian_rest_api.read,historian_rest_api.write,historian_rest_api.admin,openid,scim.me,<varname>mes.equipment.user,mes.reports.user,mes.downtime.user,mes.alarms.user,mes.security_management.user,mes.operations.user,mes.work_queue.user,mes.ncm_management.user,mes.route_management.user,mes.order_management.user,mes.property_definition.user,mes.activities.user,mes.analysis.user,mes.my_machines.user</varname>"</codeph></p>
+                </info><info>
+                    <ul><li>In the <wintitle>redirect_uri</wintitle> section, add all the IP addresses where you want to redirect the user.</li></ul>
+                </info></step></steps></taskbody></task>

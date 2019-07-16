@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_eb6a9300-4493-40d3-a6bb-ddf4f254e547"><title>About Planned Start and End Dates of a Work Order</title><conbody><p>A planned start and end date in a work order denotes the date and time when the work order is planned to begin and end, respectively. As a supervisor, you can modify the planned dates when you cannot start the work orders as per the schedule. It provides visibility to the supervisor on the progress of work for the work order.</p></conbody></concept>

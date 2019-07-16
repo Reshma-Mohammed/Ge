@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_e7fb12d7-dce3-4554-bacb-8c2c21233b9b"><title>About Custom Forms</title><prolog><author>Sweta Bhagat</author></prolog><conbody><p>You can build and use your own custom forms in the Activities application. To associate a custom form with the Activities application, you must complete the following requirements in the Plant Applications Administrator:<ul><li>Configure the URL of the custom form.</li><li>Configure the Autolog sheets to generate custom form driven activities.</li><li>Configure the user name and password for the user authentication of the custom form. </li></ul> For more information, refer to the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/pa_admin_help"></ph>.</p><section>
+            <title>Data Flow</title>
+            <p>When you perform custom activities, you are redirected to the custom activity URL. In addition to the external URL, some additional information is sent as a POST MESSAGE that is a part of HTML5 Web Messaging specification. The following data flow diagram describes the interaction between the Activities application and the custom form to establish the connection and send data. </p>
+            <p>
+                <fig><image href="custom_form_flow_chart.png"/></fig>
+            </p>
+            <p>The following procedure is described in the data flow diagram:<ol><li>The user performs a custom activity in the Activities application.</li><li>The Activities application initiates the Handshake protocol by sending a message to the form and checks whether the URL of the custom form is valid or not. <ul><li>If the URL is valid, the Activities application receives the message back. The application then adds an event listener to hear from the origin and then posts the message with the variable data to the custom form.</li><li>If the URL is not valid, a page not found 404 error message appears in the Activities application.</li></ul>
+                    </li></ol></p>
+        </section><section>
+            <title>Post Data</title>
+            <p><image href="custom_form_approach.png"/></p>
+            <p>The <codeph>window.postmessage()</codeph> method is used to send data from the Activities application to the custom form. The <codeph>window.postmessage()</codeph> method enables cross-origin communication between the following items: <ul><li>Window objects such as between a page and a window that the page spawned.<p>Example: The <codeph>window.postmessage()</codeph> method is used when you select the option to access the URL of the custom in a separate page.</p>
+                    </li><li>A page and iframe such as  between a page and an iframe embedded within the page.<p>Example: The <codeph>window.postmessage()</codeph> method is used when you select the option to access the URL of the custom form embedded within the window displaying the autolog sheet or as a replacement of the window displaying the autolog sheet.</p></li></ul>The arguments (also called as messages) passed to the <codeph>window.postMessage()</codeph> method are exposed to the receiving window through the event object. The Activities application creates an instance of target window to post message by using the following syntax: <codeblock>targetWindow.postmessage(message, targetOrigin, [transfer]);</codeblock></p>
+            <p>Where:<ul><li><codeph>targetWindow</codeph>: A reference of the custom form window that receives the message.</li><li><codeph>message</codeph>: Data to be sent to the custom form. The data is serialized using the structured clone algorithm. The algorithm enables you to pass a broad variety of data objects safely to the destination window without serializing them. </li><li><codeph>targetOrigin</codeph>: The origin of target window. By default, asterisk (*) is set to indicate no preference. The <codeph>postMessage()</codeph> transmits vital information. It is absolutely critical that this argument be a URI whose origin is the same as the intended receiver of the message containing the password to prevent interception of the password by a malicious third party. To configure the target origin in the Activities application, set <codeph>customFormsAcceptedDomains</codeph> in <filepath>settings/paActivityConfig.json</filepath> within the Activities application.</li><li><codeph>Transfer</codeph>: A sequence of transferable objects that are transferred with the message. An optional parameter not used in the Activities application.</li></ul>
+            </p>
+        </section><section>
+            <title>Event Listener</title>
+            <p>An event listener is added by the Activities application when the custom form is loaded to receive the message coming from the Activities application as shown in the following code snippet. <codeblock>window.addEventListener(“message”, receiveMessage, false); 
+function receiveMessage(event) 
+{ 
+    if (event.origin !== "http://example.org:8080") 
+        return; 
+} </codeblock>The properties of the dispatched message are: <ul><li><codeph>data (event.data)</codeph>: The information passed by the Activities application. </li><li><codeph>origin</codeph>: The origin of the window that sent the message at the time <codeph>postMessage</codeph> was called. In the code snippet, the <codeph>http://example.org:8080</codeph> is an example of <codeph>origin</codeph>.</li><li><codeph>wource</codeph>: A reference to the window object that sent the message. You can use this property to establish two-way communication between two windows with different origins.</li></ul></p>
+        </section><section>
+            <title>Security Concerns</title>
+            <p>Remember the following security concerns when you use a custom activity:<ul><li>If you do not expect to receive messages from other sites, disable the Activities application to add any event listeners for message events.</li><li>If you expect to receive messages from other sites, always verify the sender's identity using the <codeph>origin</codeph> and possibly source properties. Any window (including a URL, for example, <codeph>http://evil.example.com</codeph>) can send a message to any other window, and an unknown sender can send malicious messages. You must verify the syntax of the received message. <note>Failure to check the <codeph>origin</codeph> and possibly <codeph>source</codeph> properties enables cross-site scripting attacks. </note></li><li>Always specify an exact target origin, not an asterisk (*) in the Activities application configuration when you use <codeph>postMessage</codeph> to send data to other windows. A malicious site can change the location of the window without your knowledge. Therefore, the site can intercept the data sent using <codeph>postMessage</codeph>.</li></ul></p>
+        </section><section>
+            <title>Data Sent to a Custom Form</title>
+            <p>The data sent to custom form in the <codeph>event.Data</codeph> object is in the JavaScript Object Notation (JSON) format. The following code sample shows the data sent to a custom form and the syntax to access the data.</p>
+            <p>
+                <codeblock>{
+                "loggedUserInfo": {
+                    "token": &lt;&lt;token>>
+                },
+                "header": {
+                    "activityId": &lt;&lt;activityId>>,
+                    "activityType": &lt;&lt;activityType>>,
+                    "activityDescription": &lt;&lt;activityName>>,
+                    "startTime": &lt;&lt;startTime>>
+                },
+                "productInfo": &lt;&lt;productId>>,
+                "processOrderInfo": &lt;&lt;processOrder>>,
+                "variableInfo": &lt;&lt;variable_data>>,
+                "activityStatusInfo": {
+                    "statusId": &lt;&lt;Activity_statusId>>,
+                    "status": &lt;&lt;Activity_status>>,
+                    "readOnly": &lt;&lt;readOnly_status>>
+                },
+                "userConfigurationDetails": &lt;&lt;customActivityUser>>
+            }
+
+</codeblock>
+                <ul><li><codeph>loggedUserInfo</codeph>: Provides the user name and token. The UAA token is required when the custom forms use the public REST APIs provided to save variables into SOADB. </li><li><codeph>Header</codeph>: Provides the activity ID, activity type as Production, Time-Based, or User-Defined, activity description, and start time of the activity. </li><li><codeph>ProductInfo</codeph>: Provides the ID, name, and value of the product.</li><li><codeph>ProcessOrderInfo</codeph>: Provides the ID, name, and value of the process order. </li><li><codeph>Variables</codeph>: Provides the list of variables with ID, name, data type, and value. </li><li><codeph>ActivityStatusInfo</codeph>: Provides information regarding whether the activity is locked, read-only state, or modifiable. </li><li><codeph>userConfigurationDetails</codeph>: Provides the user name and password configured in Plant Applications.</li></ul>
+            </p>
+        </section><section>
+            <title>Data Size</title>
+            <p>As a data point, the WebKit implementation (used by Safari and Chrome) does not currently enforce any limits regarding the size of the data sent through a message. </p>
+            <p>The following domains were tested for use of the custom form:<ul><li>Same domain: successful (same IP address) </li><li>Cross domain: successful (with different IPs and ports, messages transfer between http and https) </li></ul>
+            </p>
+            <p>The transmission process of data has the following limitations: <ul><li>Data cannot be transmitted using form headers, form body, or query parameters by using <codeph>postmessage</codeph>. </li><li>All data is transmitted through <codeph>postmessage</codeph> only.</li></ul>
+            </p>
+        </section></conbody></concept>

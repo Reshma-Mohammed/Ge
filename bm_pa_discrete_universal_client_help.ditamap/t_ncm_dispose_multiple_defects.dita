@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_bgt_mpp_vhb"><title>Dispose Multiple Defects</title><taskbody><context id="context_hgt_mpp_vhb">As a Quality engineer, you can dispose multiple defects at once by creating a plan.</context><steps><step><cmd><xref href="t_ncm_create_a_plan.dita"></xref></cmd><info>
+                    <note>A plan can only be created in NC view. </note>
+                </info></step><step><cmd>Enter the plan number in the search bar. The plan is added to the queue in the Home page. </cmd></step><step><cmd>Select the plan number from the queue. All the defects associated with the plan appear on the Home page</cmd></step><step><cmd>Select <image href="dispose_ncm.png"/>. </cmd><stepresult>The <wintitle>Disposition</wintitle> page appears. The disposition page displays the number of defects being disposed. </stepresult></step><step><cmd> In the <uicontrol>Select Disposition </uicontrol>drop-down list, select an option as described the following table.</cmd><info>
+                    <table><tgroup cols="2"><thead><row><entry>
+                                        <p><uicontrol>Option</uicontrol></p>
+                                    </entry><entry>
+                                        <p><uicontrol>Description</uicontrol></p>
+                                    </entry></row></thead><tbody><row><entry>
+                                        <p><uicontrol>Clear</uicontrol></p>
+                                    </entry><entry>
+                                        <p>Select <uicontrol>Clear</uicontrol> if the defects raised for the non-conforming parts are not considered as defects.</p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>Continue to process</uicontrol></p>
+                                    </entry><entry>
+                                        <p>Select <uicontrol>Continue to process</uicontrol> to allow operation on the non-conforming parts and then select the operation till which you can continue the operations process, in the <uicontrol>Select operation</uicontrol> drop-down list box. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>Use as is</uicontrol></p>
+                                    </entry><entry>
+                                        <p>Select<uicontrol> Use as is </uicontrol>to use the non-conforming parts in the operations as they are.</p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>Scrap</uicontrol></p>
+                                    </entry><entry>
+                                        <p>Select<uicontrol> Scrap </uicontrol>to discard the non-conforming parts. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>Rework</uicontrol></p>
+                                    </entry><entry>
+                                        <p>Select <uicontrol>Rework</uicontrol> to rework on the non-conforming parts and then select the operation on which the parts should be reworked, in the<uicontrol> Select operation</uicontrol> drop-down list box. </p>
+                                    </entry></row></tbody></tgroup></table>
+                </info><stepresult>The <wintitle>Select reasons</wintitle> window appears.</stepresult></step><step><cmd>In the <ph>Select reasons </ph>window, select a corrective disposition action reason and the associated sub reasons, as applicable. </cmd><info>
+                    <note type="tip">In the <uicontrol>Search </uicontrol>box, enter a disposition action reason to search for, and then select the reason from the reasons list. </note>
+                </info></step><step><cmd><b>Optional: </b>In the <uicontrol>ADDITIONAL INFORMATION</uicontrol> box, enter any relevant information such as a URL, contact details of the supplier, or any information that is helpful to perform the root cause analysis of the non-conformance. </cmd></step><step><cmd>Select <uicontrol>Submit</uicontrol>.</cmd></step></steps><result>The status of the defects is changed based on the selected disposition method. For more information, refer to Results section of <xref href="t_ncm_dispose_a_defect.dita"></xref> topic. </result></taskbody></task>

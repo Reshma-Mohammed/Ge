@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_707daa1f-d613-4285-80c6-72c131b91725"><title>About Creating a Property Definition</title><shortdesc>As a supervisor, you can create a custom property for an application if it contains data that does not match any of the standard properties. Each property is associated with a group, and, in turn, each group is mapped to a category. </shortdesc><conbody><p>Using the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/prop_def"></ph> application, in addition to creating a property, you can copy, modify, and delete a property.</p></conbody></concept>

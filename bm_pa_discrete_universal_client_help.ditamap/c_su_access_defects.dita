@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_9f7bb554-33f8-45f4-aa16-6cd05404c79a"><title>About NCM Defects</title><conbody><p>As a supervisor, you can access the defects created on the operations when the materials produced do not conform to specifications within the manufacturing process. After an operator creates a defect on an operation in the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/operations_app"></ph> application or the Work Queues application, the associated serial number and operation are placed on hold, and the operators working on that serial number are clocked off. You can then access the defect details in the <uicontrol>NCM</uicontrol> tab in the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/supervisor_app"></ph> application.</p></conbody></concept>

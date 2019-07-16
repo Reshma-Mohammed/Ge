@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_b7985c31-3121-4137-91c1-62d7120276f6"><title>Overview</title><prolog><author>Reshma Mohammed</author></prolog><conbody><p>As an Administrator, you can use the Security Management application to provide access privileges to the users and assign them to various applications in the Plant Applications Universal Client. For example, users assigned to the Operations privilege set can work with the following features: <ul><li>Work Orders</li><li>BOM parts</li><li>Documents</li><li>Quality Variables</li></ul></p><p>Using this application, you can:<ul><li><xref href="t_sm_add_a_group.dita">Add a group to the privilege set</xref>.</li><li><xref href="t_sm_remove_a_group.dita">Remove a group from the privilege set</xref>.</li></ul></p></conbody></concept>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_4818fc35-16a4-44ac-9fb5-448f78246ab5"><title>Search for an Activity</title><prolog><author>Sweta Bhagat</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>Log in to the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/univ_client"></ph>. </cmd></step><step><cmd>Select <image href="app_icon_activities.png"/>. </cmd></step><step><cmd>Select the tab for the type of the activity for which you want to search.</cmd></step><step><cmd>Select <image href="header_search_icon_activities.png"/>.</cmd></step><step><cmd>As needed, specify the search options within a specified start and end time.</cmd><info>
+                    <note type="tip">To search for an activity using a barcode, select <image href="camera_icon_activities.png"/> for an option and scan for the barcode specific to the option. The application supports the barcodes of standards Code 39 and Code 128 only.</note>
+                </info></step><step><cmd>Select <uicontrol>Apply</uicontrol>.</cmd></step></steps><result>The activities that match the search criteria appear.<note type="tip">To clear results and perform new search, select <uicontrol>Reset</uicontrol> in the page.</note></result></taskbody></task>

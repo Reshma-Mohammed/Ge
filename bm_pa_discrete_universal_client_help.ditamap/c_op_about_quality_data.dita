@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_11675f0d-f0be-450d-81ea-fb03382ce0cf"><title>About Quality Data</title><prolog><author>Reshma Mohammed</author></prolog><conbody><p>The <wintitle>Quality Data</wintitle> section in the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/operations_app"></ph> application displays the quality variables that enable you to review the performance of a Production Line and Production Unit and compare the quality of the products produced in each Production Unit against projections for an operation. To complete an operation, the operation associated with a machine must meet the quality variable specifications. </p><p>For more information, refer to the Activities section in the Plant Applications Universal Client Help.</p></conbody></concept>

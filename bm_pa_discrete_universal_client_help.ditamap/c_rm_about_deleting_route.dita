@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_f32cbf5f-2500-4a39-967a-ba741f52988f"><title>About Deleting a Route</title><prolog><author>Swathi</author></prolog><conbody><p>If you no longer want to work with a draft route, you can delete it. The following conditions apply when you delete a route: <ul><li>You cannot delete a route that is released or archived.</li><li>You can only delete a route that is in the draft state.</li><li>The operations in the route are deleted. </li><li>The BOM items, properties, and documents used in the route are not deleted from the Plant Applications database.</li></ul>
+        </p></conbody></concept>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd" [
+]>
+<concept id="concept_f54b7f2a-01f0-4414-bd57-d5c9df0b8c9d"><title>About Removing a Group from the Privilege Set</title><conbody><p>As an Administrator, you can remove a group from the privilege set if you no longer need it. The following conditions apply when you remove a group in the Security Management application: <ul><li>The users associated with the group can no longer access the privilege set.</li><li>The groups and the users in the respective Identity Provider applications are not deleted.</li><li>The group is not deleted in User Account and Authentication (UAA).</li></ul></p></conbody></concept>

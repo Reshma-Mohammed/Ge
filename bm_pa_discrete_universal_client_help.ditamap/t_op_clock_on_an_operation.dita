@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_a57ad173-8ce9-41c5-a67f-45c557cc1e64"><title>Clock on an Operation</title><prolog><author>Reshma Mohammed</author></prolog><taskbody><prereq>Ensure that the operation is in the Ready status to clock on. </prereq><steps id="steps_yvq_p11_xw"><step><cmd>Select <uicontrol conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/operations_app_ui"></uicontrol>.</cmd></step><step><cmd>In the <uicontrol>Machines</uicontrol> drop-down list box, select a machine.</cmd><stepresult>The <wintitle>Open</wintitle> page appears. </stepresult></step><step><cmd>Select an operation in the Ready status, and then select the <uicontrol>ON</uicontrol> button to enable the clock-on process on an operation.</cmd><info>
+                    <note type="tip">You can use the <wintitle>USER(S)</wintitle> column in the <wintitle>Open</wintitle> page to access the IDs of the users who have clocked on the operation.</note>
+                </info></step></steps><result>The selected operation is clocked on and the status of the operation is modified to In Progress. A timer appears in the operation details section to track the time taken to complete an operation.</result></taskbody></task>

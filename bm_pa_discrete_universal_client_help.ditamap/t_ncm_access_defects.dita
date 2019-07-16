@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd" [
+]>
+<task id="task_lc5_1n4_vhb"><!--Don't forget to generate an ID for your topic before validating and checking in for the first time!--><!--This is the task template for sequential steps (ordered). If your task does have not sequential steps use the unordered task template. This is per 1.3 DITA DTD specs. --><title>Access Defects</title><taskbody><context id="context_sc5_1n4_vhb">
+            <p>As a Quality engineer, you can search for the defects in the Home page of the NCR Management application. </p>
+            <note>As an operator, you create defects in the Operations application. For more information, refer to the <xref scope="external" format="html" href="https://apps-docsstaging.predix.io/en-US/content/other_apps/plant_applications/apphub_pa_universal_client_help/create-a-defect"><u>Create a Defect</u></xref> topic. As a Quality engineer you can only dispose a defect which is the submitted status. for more information refer to <xref href="t_ncm_dispose_a_defect.dita"></xref> topic.</note>
+        </context><steps><step><cmd>Log in to the<ph> Plant Applications Universal Client.</ph>
+                </cmd></step><step><cmd>Select <uicontrol>NCR Management</uicontrol>. The Home page appears. </cmd></step><step><cmd>Enter any of the following to search for the associated defects.</cmd><info>
+                    <ul><li>Serial/Lot number</li><li>Non Conformance number </li><li>Work Order number </li><li>Plan number </li></ul>
+                </info><stepresult>The number is added to the Queue.</stepresult></step><step><cmd>Select the number from the Queue.</cmd><stepresult>The list of defects for that Serial number, NC, WO, or Plan are displayed in a grid table with a descending sort applied in the MODIFIED ON field (the field values of the latest modified defect appear first in the grid table). The number of defects that appear in a page depends on the resolution of your computer screen. <note>The create plan functionality is enabled only in NC view. That is, when you search for defects using Non Conformance number. </note><note>Any filter or sort settings in the page are retained even after the page is refreshed. </note></stepresult></step><step><cmd>Refer to each non-modifiable field for a defect as described in the following table. </cmd><info>
+                    <table><tgroup cols="2"><thead><row><entry>Field</entry><entry>Description</entry></row></thead><tbody><row><entry>
+                                        <p><uicontrol>STATUS</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The status of the defect. Following are the different statuses of defect </p>
+                                        <ul><li>
+                                                <p><b>Submitted</b>: The defect is Submitted for a disposition, and you must select a disposition plan for the defect. Indicated by <image href="submitted_ncm.png"/>. </p>
+                                            </li><li>
+                                                <p><b>Active</b>: The disposition plan on the defect is active. Indicated by <image href="active_ncm.png"/>. </p>
+                                            </li></ul>
+                                        <ul><li>
+                                                <p><b>Not a Defect</b>: The defect raised is not considered as a defect. Indicated by <image href="not_a_defect_ncm.png"/> . </p>
+                                            </li><li>
+                                                <p><b>Closed</b>: The disposition plan on the defect is completed. Indicated by <image href="closed_ncm.png"/> .</p>
+                                            </li></ul>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>SERIAL/LOT#</uicontrol>
+                                        </p>
+                                    </entry><entry>
+                                        <p>The material lot number or serial number that was put on hold and associated with the operation on which the defect was created. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>OPERATION</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The operation on which the defect was created. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>SUMMARY</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The defect summary as entered when the defect was created in the Operations application. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>DEFECT TYPE</uicontrol>
+                                        </p>
+                                    </entry><entry>
+                                        <p>The defect type as entered when the defect was created in the Operations application. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>DISP STATUS</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The disposition action status: Following are the disposition action statuses: </p>
+                                        <ul><li>
+                                                <p><b>Submitted</b>: The disposition method has been submitted. </p>
+                                            </li><li>
+                                                <p><b>Active</b>: The selected disposition method is in progress </p>
+                                            </li><li>
+                                                <p><b>Completed</b>: The selected disposition method is completed. </p>
+                                            </li></ul>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>DISP</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The type of disposition method selected. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>CTP/REWORK</uicontrol></p>
+                                    </entry><entry>
+                                        <p>The operation till which the non-conformance part can continue to process (when CTP disposition type is selected) or the operation for the which rework needs to be done (when Rework disposition type is selected). </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>PLAN MODIFIED BY </uicontrol></p>
+                                    </entry><entry>
+                                        <p>The name of the user who last modified the plan. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>PLAN MODIFIED ON </uicontrol></p>
+                                    </entry><entry>
+                                        <p>The time stamp in the format mm/dd hh:mm (for example, 11/14 15:01) when the plan was last modified. </p>
+                                    </entry></row><row><entry>
+                                        <p><uicontrol>ACTIONS</uicontrol>
+                                        </p>
+                                    </entry><entry>
+                                        <p>The actions you can perform on a serial/material lot number. Includes the following: </p>
+                                        <ul><li>
+                                                <p><uicontrol>Add serial number to queue</uicontrol>: Indicated by <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAYAAADXPsWXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABLSURBVDhPY/wPBAwUAiYoTREYNQQTEDRE19EXysINRgMWEwweQ8AZkJhoxAUu79/MwAAyBB/QcfCBsnCD0djBBIPHkNGCGh0wMAAAn5RRVNeji0sAAAAASUVORK5CYII="/> . Select to add a serial number to the queue. When you select the serial number from queue you can view all the defects raised against the serial number. </p>
+                                            </li><li>
+                                                <p><uicontrol>Disposition</uicontrol>: Indicated by <image href="dispose_ncm.png"/> . Select to choose the disposition plan. </p>
+                                            </li><li>
+                                                <p><uicontrol>Menu</uicontrol>: Indicated by<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJDSURBVEhLY/wPBAx0BERbeOn6TYbZS1YxHD97Acy3NDZgSI0JY9DTVAfziQVEWXju8jWGxIJKBn0tDQZvF3uw2Na9BxkuXr3BMH9CO4ORrhZYjBhAlIVJhVUMzExMDLN7W6AiEJBaUsPw9+8/hnn9bVARwoAJSuMEX799Zzh94TJDsI87VAQBgr3dwXIgNcQCghb++fMHTHOws4FpZAATg6khBhC0kJ+Pl0FNWZFhx/4jUBEEAImB5EBqiAagOCQEtu879F/Hwed/Xdek/+cuXwVjEBskBpIjBRCdLTbv2s8wbcEyhifPX4D5MpISDFkJUQy+bo5gPrGA5Ix//9ETMK0oJwOmSQUkW0gpIJho0MHnL1/BmFxAtA8PnzzDMGPhCnARBwKgIi0jPoLB1twEzCcWEGUhyLKsikYGJxsLYCJxAor8ByeifUdOMEzrqCfNUpCFhEBUZvH/vJoWKA8BQGIgOVIAwTgExRcoGLElf5BvQXKkxCkJiYYRSiMD0hM4QQt5ebjBCWTzrn1QEQQAxSNIDqSGWEBGogEFLSPYAeQkmsGZLZABLIGQEozIgGQLKQUkF22gwhtWgJMDiPYhtaonulfARFkYlJz7v7ylB8pDAJAYSI4UQDAOP376zHDr7n0GD0cbqAgCgMRAciA1xAKCFrKwsIDpHz9/gWlkABODqSEGELSQm4uTwdRAl2Ht1p1QEQRYu2UnWA6khlhAVCqFN/W1gU19Z2hTfw+wqX+NRk19EKBrZ4aagOSShjLAwAAAMkGlJA7+gMgAAAAASUVORK5CYII="/> . Includes the following: <ul><li><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAVCAYAAAC6wOViAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJASURBVEhLxZZNSBtBFMef8ZiNh0TrF3osCCqCKH5hSvUgJaKpKIqaHnrRQ72qV4VcPXio0JNpe1ARhRYRWi+tbQUpFAVLe6xYNZoczOa83f8ws2bHmZiA2B+EYd689/47M29mUmDZ0D3j4e29ktdMD3/+prebW3SVMuksfkFlD0qoyGfQaP8Tqqt5yL1uJyfRpdgqxdY2KWWmKOD3U1VlORleL5npNB2fnFIimSSf4aPIYD9NRIZ4VBYgquPD529WcCBi1T/us6KLr6yz+CUfcQM7xuEHf8RlQyvKknT1WRMzc1oxGfjBX3ykDqXo2ItpFvhyeYVbrkHS1tCIVfsoxNrJ2Xk+cg3iED8+NcMtbm6Ihp9PsQDVErWEhtkPSQ+OfrEWfYjLIB55kE/GJSpmiIQyGIOACtixAjJCGLGZOKKiEHRFIGaoAnbVbIEQztxj53JYf7dNPV2d1N3Rwi1uTNOk9qYG3nMDO46TCuRra25k+QWO6EBvD23vfKKPu3vc4sYwDPqy/4P33MDu8RTynhvk+7r/neV34DNmsD21j4lqiUXVqsi6p3Y+7Z4KWPVqhEWlLr1eZcWGFn3Y5bMsBG+tXoGoYlXhYEYQwTmFD/qyIOJUMxQoRYGoZhz+fG4kXAhytcpoRQGWKPjUvnvtr56OLmjFYcc4/OCv2ppMcn5lltc22LEJBPxUXVnhvDJ/Tv5SIpFk1f1sMJzTK5P3e/pm4739nqbp/OKSSkuK7ffUS2Ph0N2/p3fNf/i7QvQPcs+2YJA+YOIAAAAASUVORK5CYII="/>
+                                                            <uicontrol>View</uicontrol>: Select to view details of the disposition.</li><li><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIuSURBVEhLY/wPBAx0AkxQGgXce/yUISK/hmHC/BVQEeoADMtAFlX1TGf4+u07w95jp6lqIYplMIsYgCE7sa6IwdnKlLoWguIMBO4+evI/PK/6f3huFZgNA/3zlv/3SSkC05QCsM+QfdRWmsWgJCsNdggIFCRGMEiIClPFh2DLqrqngeMI3SIQ6Ju7jOHF67cMirJSFFsItgwUNyCwac9hMA0DIIv2nzjLEOnrxjCprpjiOGRuAAJjHQ2GV2/fgw0C0RaGOigWRfm5gxWDxNHVkQJQMjXIxSCDQHEECjqYRfuOn2G48+AxQ1pkIIo6kE9BcUosQEn6II0gA2BxBPMRyKLN+44wzFq+HsyHqSM1SMHBCGWDASyozl29CQ8qY11Nhi9fv4EtBNEgPjlBimEZCGAziBoWYrUMBGhhIU7LQIDaFuK1DASoaSFBy0CAWhYSZRkIkGMhNxcng4aSPNQEEiwDAUIWcrCzM2iqKIDFQWqevnjN4GlvCdUNBOCyn0SArdpZu2M/lAUBwAIArOblm7dQEWgVQyrAVoIEuTuAaRhwtoYU7sfPXwHTIECWZSBAqMgCVVViwoIM+46dgYqQGGfoADkO9wINfQ1kC/DzMgjy84HlX715x3DiwhUGF6AvQYmFKk25jXsOgS28//gZmC8mLMRgCXQIqDAH+Tol3J/B38WOOpbBwKu378BxhGwxCICCFNSAolkjFdliUJNjbkcN7SzDBshOjaQDBgYADUSTdEeBAboAAAAASUVORK5CYII="/>
+                                                            <uicontrol>Edit</uicontrol>: Select to edit the non-conformance details added by the operator in Operations Application. Enabled only when the defect is in the Submitted status or when the defect is in the Active status and the selected disposition method is Continue to Process. </li><li><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJwSURBVEhLvZZNSFRRFMdP7TJblZKLRCHB0E0TJEUMtDDBDNKNi0qDRAstyBa1mGlj0bQpLXdpi6BwVgVqYKDix6ICp0VFkpDYIsuxlaMtn/d/Os95zL1v3nsz5Q8e3Hvefe9/P8459+ywFLSNBBZcXlmln8lV6RFVlJVS4e4C6XnjSzC1vkHxkTf0enKWBTOpKC+l0ydPUL16vMQ9BSE0GH9FhQW7qPlMHYWqKlnAZmHxO02/T9DoxAylNv5QpKuNwjUheWsAgm70PHpi1Z67bA0Nj4klOwNDL61jja1W7+Bzsei4CtpiX78ticUfGI/vIG7CKIgV5SJmM/fxC6906u2cWNJogmupdav2/JWs24iJdEbvSc8MVtjUcUN6aXbKUW4xqjyRHaThlFh01pTXJj7NS88MvleTp+l3CbH8RRPEgHDNEenlDsID/4EHO9EEP3yep/DRLG4dgMMqhFwFO6MxOt50kdtdt2N05/EAt/OhpHgfJw0nW4L3b12j/UV7uX2w7ABFrrZx28QeySZ3+3OYlDgPA+9rbO9mT/XCjreW7qjreDs8nBjDwi8Ye+F6hMPox6+kWNMgtPDeieY0QTI/xj570MMhYG+zE3h8qPqQ9AQR/udgy7GdmdlKWyHADYAbIh96n77gsHDeLMAoCOLDY+rKmZVeMDDZhcUls6fLSjVGxmd4S5SwWPzxUF1N+A4eaiLrGUIUrn8z1qedRSYQQELHeDcx4Hnj4zxxHkh5oepKPhdkEDwoN/AgfWEcSoxLzWf5nRu+iyj8GOUGfry8klSF1G/OTCXFRVxSZJYebgSu2vLF1Uv/F9ssSLQJm41PInq3aDYAAAAASUVORK5CYII="/>
+                                                            <uicontrol>History</uicontrol>: Select to view all the actions performed on the defect by the user. <p>
+                                                                <note> In the History grid, click <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAVCAYAAAC6wOViAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJASURBVEhLxZZNSBtBFMef8ZiNh0TrF3osCCqCKH5hSvUgJaKpKIqaHnrRQ72qV4VcPXio0JNpe1ARhRYRWi+tbQUpFAVLe6xYNZoczOa83f8ws2bHmZiA2B+EYd689/47M29mUmDZ0D3j4e29ktdMD3/+prebW3SVMuksfkFlD0qoyGfQaP8Tqqt5yL1uJyfRpdgqxdY2KWWmKOD3U1VlORleL5npNB2fnFIimSSf4aPIYD9NRIZ4VBYgquPD529WcCBi1T/us6KLr6yz+CUfcQM7xuEHf8RlQyvKknT1WRMzc1oxGfjBX3ykDqXo2ItpFvhyeYVbrkHS1tCIVfsoxNrJ2Xk+cg3iED8+NcMtbm6Ihp9PsQDVErWEhtkPSQ+OfrEWfYjLIB55kE/GJSpmiIQyGIOACtixAjJCGLGZOKKiEHRFIGaoAnbVbIEQztxj53JYf7dNPV2d1N3Rwi1uTNOk9qYG3nMDO46TCuRra25k+QWO6EBvD23vfKKPu3vc4sYwDPqy/4P33MDu8RTynhvk+7r/neV34DNmsD21j4lqiUXVqsi6p3Y+7Z4KWPVqhEWlLr1eZcWGFn3Y5bMsBG+tXoGoYlXhYEYQwTmFD/qyIOJUMxQoRYGoZhz+fG4kXAhytcpoRQGWKPjUvnvtr56OLmjFYcc4/OCv2ppMcn5lltc22LEJBPxUXVnhvDJ/Tv5SIpFk1f1sMJzTK5P3e/pm4739nqbp/OKSSkuK7ffUS2Ph0N2/p3fNf/i7QvQPcs+2YJA+YOIAAAAASUVORK5CYII="/> to view <uicontrol>ADDITONAL INFORMATION</uicontrol> related to the defect. </note>
+                                                            </p></li><li><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACSSURBVDhPtZTLDYAgEETReizCAmxaLxotanVQCJ9l+QTfQRBmXqIhDPSgOjDisR2XfmnBdtf9pGleCGMtbleFC6WEHS0CNTIua0WgRJbKeCIgyaS9SAS4giQBrAi4xZwEJEXACHISoA9kFz5hhPs57jzFfz9bKkh7nkgKGlIZKyqRGLisFtVIDGGn/zXSytslugFvNRg+KqDYxQAAAABJRU5ErkJggg=="/>
+                                                            <uicontrol>Remove from Plan</uicontrol>: Select to remove the serial/ material lot number from the associated plan. <p>Enabled only when the defect is in submitted status.<note> When you remove the serial/ material lot number from a plan, the disposition button is not enabled. You can dispose the associated defect only by creating another plan for the serial/ material lot number. </note></p></li></ul></p>
+                                            </li></ul>
+                                    </entry></row></tbody></tgroup></table></info></step><step><cmd><b>Optional: </b>Select a field (column heading) to sort the field values in the ascending (A to Z [case-sensitive] for letters, smallest to largest for numerical data, and oldest to newest for dates) or descending (Z to A [case-sensitive] for letters, largest to smallest for numerical data, and newest to oldest for dates) order. </cmd><info>
+                    <note>The sort settings that you apply on a field column are retained only on that page. If you access any other application in the Plant Applications Universal Client, your sort settings are not retained in the NCR Management application.</note>
+                </info></step><step><cmd><b>Optional: </b><xref scope="external" format="html" href="https://apps-docsstaging.predix.io/en-US/content/other_apps/plant_applications/apphub_pa_universal_client_help/filter-a-defect"><u>Filter a defect</u></xref>.</cmd></step><step><cmd><b>Optional:</b>Select <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAeCAYAAADZ7LXbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAL7SURBVEhL7ZVrSFNhGMf/lpRUlnnJykg0EAQpKCLoCn7oQxcUulh0M6fEiswlc5mznCzLWOmU0vxgSLi+aGZlZqXzkkQGWWqkqXjpYnRB1Cm0nfl29u5tNvRsx8RP9YOxc/7Pe87/PO/zvO/rQngwzcxg/9PKP2jS9/U7mlrb8TclFFX45rYOJKRlwmO+OwKX+0Elk8LVdSaLOkdUJi/fvMX20E24laGGeXQUyVeugePMLOocpyadPR9RUqFHSNAK+vXq+BO86gLlZIws0yVER/cHsiPqFKmsb2CKFZOJI2cuZRHFRS29doagiZDBbywvj1NpiK60nCnCjJsuo8mE1s5uxKVqIJMcQOj6tSwyhqUuLXwz+Hp74kf/AFOFseuuhtctUGqugzNzUJ6METRI1eahubUDgf5+SJRGwWvhAhYVgObDSEzPIvee1pCfRiNT7DGbzSRefZXslsoFx0yE3XStDglGySM9jEYTU8bgOA7nM3LBvxxus2ehoOg+i4iAmdnQ3tSRKHkKGTIMM4UQjs9AwXfThl1HyfuuHtI/MEgOxiWRPF0xG+GYcYWPjdyPVcFBtPCG4RGqafN1NAP5scOQX8jAoGEY2SoF6hoakXf7Dh3jEGY2jsz8QiJJUNGvtqyHB5V1VC/T15GwaBnp+dRHY4dkSnKj0HFGDhdjbmER2bxXQo6cTiYDQwam8kZVVqNekUYOTSzwBWdX9kxsVMSi9jg1cYRYI9tiNIyMID2ngD83vtFaCTHHzQ3R+8Kxkm8OCw+rntHiZ6sS4D5vLmJTLmPLujWQRITTOIVa8ZRX19NNjz+cHP5KKqqILFXDnrJSxjdFWAyf0ecv5O5jPdnDL9Y/cWVetEWXLPLGYh8vpkxMwDI/VNQ+Z3dWtoVuhGU6jiel8RuVCzLPxVsDDNt0lT6pRmNLGyJ2bqUBIdq7elFeU48c9VmmjNH0rh3enh5Y6uvDFCs2k9oXr1BQLG6rCArwh0Iaye6cI+qMnyqizvip8t9kEgC/AP069PPGUXdRAAAAAElFTkSuQmCC"/> to dispose a defect that is in submitted status. Alternately, you can also dispose multiple defects at a time. For more information, refer to <xref href="t_ncm_dispose_multiple_defects.dita"></xref> topic. </cmd></step></steps></taskbody></task>

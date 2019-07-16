@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_9d278871-8633-47d6-b35f-25881569f38e"><title>Add a Production-Based Event</title><prolog><author>Sweta Bhagat</author></prolog><taskbody><steps id="steps_yvq_p11_xw"><step><cmd>Log in to the <ph conref="r_conref_pa.dita#reference_9d772631-a06f-44ea-ae85-bdf4615c2e9f/univ_client"></ph>. </cmd></step><step><cmd>Select <image href="app_icon_activities.png"/>.</cmd><stepresult>
+                    <p>By default, the <wintitle>Open</wintitle> page appears.</p>
+                </stepresult></step><step><cmd>In the <wintitle>Open</wintitle> page, select <image href="header_add_icon_downtime.png"/>, and then select <uicontrol>Production Based Event</uicontrol>.</cmd><stepresult>
+                    <p>The <b>Add Production Event</b> window appears, displaying a list of production-based Autolog sheets accessible to the logged-in user as configured in the Plant Applications Administrator.</p>
+                </stepresult></step><step><cmd>In the <wintitle>Choose activity</wintitle> section, select an activity to create a production-based event on the selected activity.</cmd></step><step><cmd>In the <uicontrol>2. Event Details</uicontrol> section, in the <uicontrol>EVENT NUMBER</uicontrol> box, enter an event number that is unique.</cmd><info>
+                    <note>
+                        <p>If the string of the event number of the last added event has numeric values in it, then the application automatically increments the last numeric value by 1. The string with the incremented numeric value for the new event appears in the <uicontrol>EVENT NUMBER</uicontrol> box. You can retain or modify this value. For example, if the event number of the last added event is <codeph>PB79RQ89AP</codeph>, then when you add an event, the value <codeph>PB079RQ90AP</codeph> appears in the <uicontrol>EVENT NUMBER</uicontrol> box. Similarly, if the event number of the last added event is <codeph>PB79RQ89AP1</codeph>, then for the new event, the value <codeph>PB79RQ89AP2</codeph> appears in the <uicontrol>EVENT NUMBER</uicontrol> box.</p>
+                    </note>
+                </info></step><step><cmd>In the <uicontrol>DURATION</uicontrol> box, select a start and end time for the production-based event. </cmd><info>
+                    <note>The start and end time of the event must be within two hours from the current date and time.</note>
+                </info></step><step importance="optional"><cmd>Specify values for the following optional properties: STATUS, APPLIED PRODUCT, and COMMENT.</cmd><info>
+                    <note>When the status of a production-based event associated with the activity is set to a production status that has the <uicontrol>Lock Event Data</uicontrol> option enabled, you do not have the privilege to modify the Autolog sheet for that event.</note>
+                </info></step><step><cmd>Select <uicontrol>Save</uicontrol>.</cmd></step></steps><result>The production-based event for the selected activity is added and an activity is automatically created for the event. The activity appears in the <wintitle>Open</wintitle> page.</result></taskbody></task>

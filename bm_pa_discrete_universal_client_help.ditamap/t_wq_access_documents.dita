@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd" [
+]>
+<task id="task_3a98cbb7-6298-4199-bbb0-c9de90d0114b"><title>Access Documents</title><prolog><author>Swathi</author></prolog><taskbody><context>You can access the documents that are related to an operation. The documents can be instruction manuals or technical publications associated with the operation. They have been added to the corresponding product line, equipment, or material using the Route Management module or the ERP system. </context><steps id="steps_yvq_p11_xw"><step><cmd>In the <wintitle>Work Queue</wintitle> page, select the operation on which you want to work.</cmd><stepresult>The <wintitle>Documents</wintitle> section appears, providing a list of documents associated with the operation.</stepresult></step><step><cmd>Select the document that you want to access. </cmd></step></steps><result>The document appears in the workspace.<note type="tip">
+               
+                   
+                    You can rotate, download, or print the document.
+                
+            </note>
+        </result><postreq>Perform the operation, and <xref href="t_wq_consume_bom.dita">specify the consumption of BOM items for the operation</xref>.</postreq></taskbody></task>

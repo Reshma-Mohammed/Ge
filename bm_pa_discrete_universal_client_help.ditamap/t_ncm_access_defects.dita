@@ -3,7 +3,12 @@
 ]>
 <task id="task_lc5_1n4_vhb"><!--Don't forget to generate an ID for your topic before validating and checking in for the first time!--><!--This is the task template for sequential steps (ordered). If your task does have not sequential steps use the unordered task template. This is per 1.3 DITA DTD specs. --><title>Access Defects</title><taskbody><context id="context_sc5_1n4_vhb">
             <p>As a Quality engineer, you can search for the defects in the Home page of the NCR Management application. </p>
-            <note>As an operator, you create defects in the Operations application. For more information, refer to the <xref scope="external" format="html" href="https://apps-docsstaging.predix.io/en-US/content/other_apps/plant_applications/apphub_pa_universal_client_help/create-a-defect"><u>Create a Defect</u></xref> topic. As a Quality engineer you can only dispose a defect which is the submitted status. for more information refer to <xref href="t_ncm_dispose_a_defect.dita"></xref> topic.</note>
+            <note>As an operator, you create defects in the Operations application. For more
+                information, refer to the <xref scope="external" format="html"
+                    href="https://apps-docsstaging.predix.io/en-US/content/other_apps/plant_applications/apphub_pa_universal_client_help/create-a-defect"
+                        ><u>Create a Defect</u></xref> topic. As a Quality engineer, you can only
+                dispose a defect which is in the submitted status. for more information refer to
+                    <xref href="t_ncm_dispose_a_defect.dita"/> topic.</note>
         </context><steps><step><cmd>Log in to the<ph> Plant Applications Universal Client.</ph>
                 </cmd></step><step><cmd>Select <uicontrol>NCR Management</uicontrol>. The Home page appears. </cmd></step><step><cmd>Enter any of the following to search for the associated defects.</cmd><info>
                     <ul><li>Serial/Lot number</li><li>Non Conformance number </li><li>Work Order number </li><li>Plan number </li></ul>
